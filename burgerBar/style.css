@@ -1,0 +1,41 @@
+body {
+  cursor: none;
+}
+
+.bar {
+  margin: 100px;
+  width: 63px;
+}
+.bar span {
+  display: block;
+  width: 63px;
+  height: 6px;
+  background-color: black;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  transform-origin: left center;
+  transition: 0.7s;
+}
+.bar:hover span:first-child {
+  transform: rotate(45deg);
+}
+.bar:hover span:nth-child(2) {
+  opacity: 0;
+}
+.bar:hover span:last-child {
+  transform: rotate(-45deg);
+}
+
+.trailMouse {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.trailMouse i {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */

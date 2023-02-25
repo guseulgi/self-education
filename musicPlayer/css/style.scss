@@ -1,0 +1,59 @@
+// reset CSS
+@import 'reset';
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Black+Han+Sans&family=Luckiest+Guy&family=Monoton&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+// font-family: 'Bangers', cursive;
+// font-family: 'Black Han Sans', sans-serif;
+// font-family: 'Luckiest Guy', cursive;
+// font-family: 'Monoton', cursive;
+// font-family: 'Noto Sans KR', sans-serif;
+
+// Common
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1rem;
+}
+
+header {
+
+  h1 {
+    position: absolute;
+    top : 5vh;
+    left: 3vw;
+    font-family: 'Luckiest Guy', cursive;
+  }
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background : linear-gradient(20deg, rgb(16, 79, 142), rgb(111, 183, 255));
+  background-image: url('../source/Untitled.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section {
+  position: absolute;
+  width: 50vw;
+  height: 60vh;
+  top: 0;
+  bottom: 0;
+
+  right : -65vw;
+  margin: auto;
+  // background-color: antiquewhite;
+
+  article {
+    position: relative;
+    background-color: rgb(52, 52, 52);
+    top : 0;
+    bottom: 0;
+    right : 68vw;
+  }
+}
+
+@import 'panel';
+@import 'control';

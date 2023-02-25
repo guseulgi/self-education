@@ -1,0 +1,53 @@
+.panel {
+  width : 50vw;
+  height: 60vh;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  position: absolute;
+
+  h2 {
+    position: absolute;
+    top : 15%;
+    left: -50%;
+    font-size: 3.5rem;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+    color :  rgb(39, 102, 160);
+    
+    text-shadow: 2px 2px 0 white;
+    transition: 1s;
+    // opacity: 0;
+    transform: translateX(120%);
+    z-index: -1;
+
+    &.animate {
+      transform: translateX(0);
+    }
+    
+  }
+  &:hover {
+    h2 {
+      transform: translateX(0);
+      z-index: 0;
+      opacity: 1;
+    }
+
+  }
+
+  img {
+    display: block;
+    width: 97%;
+    height: 97%;
+    margin: 1vh auto 0 auto;
+    background-color: rgb(160, 209, 255);
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, .2);
+  }
+
+  p {
+    text-align: center;
+    position: absolute;
+    bottom : 5vh;
+    width: 100%;
+  }
+}
