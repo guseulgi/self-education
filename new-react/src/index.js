@@ -34,10 +34,21 @@ import reportWebVitals from './reportWebVitals';
 // );
 
 // 06
-import NotificationList from './chapter06/NotificationList';
+// import NotificationList from './chapter06/NotificationList';
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <NotificationList />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+import MyHeader from './biteReact/MyHeader';
+import MyFooter from './biteReact/MyFooter';
 ReactDOM.render(
   <React.StrictMode>
-    <NotificationList />
+    <MyHeader/>
+      <App/>
+    <MyFooter/>
   </React.StrictMode>,
   document.getElementById('root')
 );
